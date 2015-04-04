@@ -5,8 +5,11 @@ angular.module('shortly.shorten', [])
 	$scope.link = {};
 
 	$scope.addLink = function(){
+		$scope.loading = true;
 		Links.addLink($scope.link)
 		  .then(function(link){
+		  	$scope.loading = false;
+		  	$location.path('/')
 
 		  	// $scope.link
 		  	/*
@@ -32,3 +35,11 @@ angular.module('shortly.shorten', [])
 // $scope.link = {
 // 	url: "http://google.com"
 // }
+
+req = {
+	navLink: {
+		vists: 0,
+		code: "dfu2038",
+		base_url: "localhost:3000"
+	}
+}

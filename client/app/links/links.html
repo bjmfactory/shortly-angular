@@ -1,9 +1,12 @@
 <div id='container'>
-  <!-- Your html here -->
-  <h1>We're in Links.html</h1>
+  <h1>Your Links</h1>
   <div ng-model="data">
   	<ul>
-  	<li ng-repeat='link in data.links'>{{ link.url }}</li>
+  	<li ng-repeat='link in data.links'>
+  	<a href="http://localhost:3000/api/links/{{ link.code }}"> {{link.title}}</a>
+  	</li>
   	</ul>
+
+  	<a href="#/shorten">More links to shorten? <strong>Shorten Links</strong></a>
   </div>
 </div>
