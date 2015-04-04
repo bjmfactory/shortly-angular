@@ -28,3 +28,10 @@ angular.module('shortly.auth', [])
       });
   };
 });
+
+// $scope.user on the inside
+
+// $scope.user = {
+//   username: "ben",
+//   password: "ben"
+// }

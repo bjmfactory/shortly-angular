@@ -1,9 +1,9 @@
-<div id='links'>
+<div id='container'>
   <!-- Your html here -->
-  <p>We're in Links.html</p>
+  <h1>We're in Links.html</h1>
   <div ng-model="data">
   	<ul>
-  	<li ng-repeat='link in data.links'>{{ link }}</li>
+  	<li ng-repeat='link in data.links'>{{ link.url }}</li>
   	</ul>
   </div>
 </div>
